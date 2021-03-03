@@ -245,19 +245,40 @@ CODING CHALLENGE 2
  * HINT: Use and if/else statement
  */
 
-let massJohn, massMark, heightJohn, heightMark;
-massJohn = 92;
-heightJohn = 1.95;
-massMark = 95;
-heightMark = 1.69;
+// let massJohn, massMark, heightJohn, heightMark;
+// massJohn = 92;
+// heightJohn = 1.95;
+// massMark = 95;
+// heightMark = 1.69;
 
-const bmiJohn = massJohn / (heightJohn * heightJohn);
-console.log(`this is bmiJohn: ${bmiJohn}`);
-const bmiMark = massMark / (heightMark * heightMark);
-console.log(`this is bmiMark: ${bmiMark}`);
+// const bmiJohn = massJohn / (heightJohn * heightJohn);
+// console.log(`this is bmiJohn: ${bmiJohn}`);
+// const bmiMark = massMark / (heightMark * heightMark);
+// console.log(`this is bmiMark: ${bmiMark}`);
 
-if (bmiMark > bmiJohn) {
-  console.log(`Mark's BMI: ${bmiMark} is higher than John's BMI ${bmiJohn}`);
-} else {
-  console.log(`John's BMI: ${bmiJohn} is lower than Mark's BMI: ${bmiMark}`);
-}
+// if (bmiMark > bmiJohn) {
+//   console.log(`Mark's BMI: ${bmiMark} is higher than John's BMI ${bmiJohn}`);
+// } else {
+//   console.log(`John's BMI: ${bmiJohn} is lower than Mark's BMI: ${bmiMark}`);
+// }
+
+/**
+ * TYPE CONVERSION & COERCION
+ */
+const inputYear = '1991';
+console.log(Number(inputYear));
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
+console.log(Number('John'));
+//NaN is an invalid number, but its still a number
+console.log(String(23));
+
+//type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+console.log('23' / '18');
+
+let n = '1' + 1;
+n = n - 1;
+console.log('this is the value of n:', n);
