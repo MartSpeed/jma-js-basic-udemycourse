@@ -209,11 +209,55 @@ if (height == '23') {
 /****************** 
 CODING CHALLENGE 2
 *******************/
-const age = 19;
-const isOldEnough = age >= 18;
+// const age = 15;
+// const isOldEnough = age >= 18;
 
-if (isOldEnough) {
-  console.log(`Sarah can start driving lessons ${age}`);
+// if (isOldEnough) {
+//   console.log(`Sarah can start driving lessons ${age}`);
+// } else {
+//   console.log(`Sarah cannot start driving lessons ${age}`);
+//   const yearsLeft = 18 - age;
+//   console.log(`Sarah is too young, Wait another ${yearsLeft} years:)`);
+// }
+
+// // this will contain the century the person was born
+// const birthYear = 1995;
+// let century = 0;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+// console.log(century);
+
+/**
+ * Use the BMI example from Challenge #1, and the code
+ * you already wrote, and improve it:
+ *
+ * 1. Print a nice output to the console, saying who has
+ * the higher BMI. The message can be either "Mark's BMI
+ * is higher than John's!" or "John's BMI is higher than
+ * Mark's!"
+ * 2. Use a template string to include the BMI values in
+ * the outputs. Example: "Mark's BMI (28.3) is higher
+ * than John's (23.9)!"
+ *
+ * HINT: Use and if/else statement
+ */
+
+let massJohn, massMark, heightJohn, heightMark;
+massJohn = 92;
+heightJohn = 1.95;
+massMark = 95;
+heightMark = 1.69;
+
+const bmiJohn = massJohn / (heightJohn * heightJohn);
+console.log(`this is bmiJohn: ${bmiJohn}`);
+const bmiMark = massMark / (heightMark * heightMark);
+console.log(`this is bmiMark: ${bmiMark}`);
+
+if (bmiMark > bmiJohn) {
+  console.log(`Mark's BMI: ${bmiMark} is higher than John's BMI ${bmiJohn}`);
 } else {
-  console.log(`Sarah cannot start driving lessons ${age}`);
+  console.log(`John's BMI: ${bmiJohn} is lower than Mark's BMI: ${bmiMark}`);
 }
