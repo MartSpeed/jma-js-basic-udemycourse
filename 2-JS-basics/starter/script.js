@@ -265,20 +265,35 @@ CODING CHALLENGE 2
 /**
  * TYPE CONVERSION & COERCION
  */
-const inputYear = '1991';
-console.log(Number(inputYear));
-console.log(inputYear + 18);
-console.log(Number(inputYear) + 18);
-console.log(Number('John'));
-//NaN is an invalid number, but its still a number
-console.log(String(23));
+// const inputYear = '1991';
+// console.log(Number(inputYear));
+// console.log(inputYear + 18);
+// console.log(Number(inputYear) + 18);
+// console.log(Number('John'));
+// //NaN is an invalid number, but its still a number
+// console.log(String(23));
 
-//type coercion
-console.log('I am ' + 23 + ' years old');
-console.log('23' - '10' - 3);
-console.log('23' / '2');
-console.log('23' / '18');
+// //type coercion
+// console.log('I am ' + 23 + ' years old');
+// console.log('23' - '10' - 3);
+// console.log('23' / '2');
+// console.log('23' / '18');
 
-let n = '1' + 1;
-n = n - 1;
-console.log('this is the value of n:', n);
+// // the string concatenated the 1 and made 11, 11-1=10
+// let n = '1' + 1;
+// n = n - 1;
+// console.log('this is the value of n:', n);
+
+// const money = 0;
+// if (money) {
+//   console.log('Dont spend it all');
+// } else {
+//   console.log('You should get a job!');
+// }
+
+// let height;
+// if (height) {
+//   console.log('YAY Height is defined');
+// } else {
+//   console.log('Height is undefined');
+// }
