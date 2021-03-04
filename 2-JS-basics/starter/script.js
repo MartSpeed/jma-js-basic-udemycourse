@@ -425,7 +425,11 @@ if (
   dolphinScoreAverage >= minimumScore
 ) {
   console.log('BONUS 2: dolphins have the better scoring average');
-} else if (koalaScoreAverage === dolphinScoreAverage) {
+} else if (
+  koalaScoreAverage === dolphinScoreAverage &&
+  koalaScoreAverage >= minimumScore &&
+  dolphinScoreAverage >= minimumScore
+) {
   console.log('BONUS 2: This ends in a draw');
 }
 console.log('========== BONUS 2 is COMPLETE==========');
