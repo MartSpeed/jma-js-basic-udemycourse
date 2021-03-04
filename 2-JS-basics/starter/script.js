@@ -431,5 +431,7 @@ if (
   dolphinScoreAverage >= minimumScore
 ) {
   console.log('BONUS 2: This ends in a draw');
+} else {
+  console.log('No one wins the trophy');
 }
 console.log('========== BONUS 2 is COMPLETE==========');
