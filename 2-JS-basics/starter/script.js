@@ -309,3 +309,123 @@ if (age === 18) console.log('You just became an adult');
 /**
  * BOOLEAN LOGIC
  */
+
+/*
+ * LOGICAL OPERATORS
+
+ const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && !hasGoodVision);
+console.log(!hasDriversLicense || hasGoodVision);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log('Sarah is able to drive');
+// } else {
+//   console.log('Someone else should drive');
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log('Sarah is able to drive');
+} else {
+  console.log('Someone else should drive');
+}
+ */
+
+/**
+ * CODING CHALLENGE #3
+ *
+ * There are two gymnastics teams, Dolphins and Koalas.
+ * The compete against each other 3 times. The winner
+ * with the highest average score wins the trophy!
+ *
+ * [x] 1. Calculate the average score for each team, using
+ * the test data below
+ * [x] 2. Compare the team's average scores to determine the
+ * winner of the competition, and print it to the
+ * console. Don't forget that there can be a draw, so
+ * test for that as well (draw means they have the same
+ * average score).
+ *
+ * 3. BONUS 1: include a requirement for a minimum score
+ * of 100. With this rule, a team only wins if it has a
+ * higher score that the other team, and the same time a
+ * score of at least 100 points. HINT: Use a logical
+ * operator to test for minimum score, as well as
+ * multiple else-if blocks.
+ * 4. BONUS 2: Minimum score also applies to a draw! So
+ * a draw only happens when both teams have the same
+ * score and both have a score greater or equal to 100
+ * points. Otherwise, no team wins the trophy.
+ *
+ * TEST DATA: Dolphins score 96, 108, and 87. Koalas
+ * score 88, 91 and 110.
+ * TEST DATA BONUS 1: Dolphins score 97, 112 and 101.
+ * Koalas score 109, 95 and 123
+ * TEST DATA BONUS 2: Dolphin score 97, 112, and 101.
+ * Koalas score 109, 95, and 106
+ */
+
+// average of score variables
+console.log('***** BASE MODE *****');
+let koalaScoreAverage = (88 + 91 + 110) / 3;
+console.log('this is the koala average', koalaScoreAverage);
+let dolphinScoreAverage = (96 + 108 + 87) / 3;
+console.log('this is the dolphin average', dolphinScoreAverage);
+const minimumScore = 100;
+
+if (koalaScoreAverage > dolphinScoreAverage) {
+  console.log('koalas have the better scoring average');
+} else if (dolphinScoreAverage > koalaScoreAverage) {
+  console.log('dolphins have the better scoring average');
+} else {
+  console.log('This ends in a draw');
+}
+console.log('*****BASE MODE IS COMPLETE *****');
+
+console.log('========== BONUS 1 ==========');
+koalaScoreAverage = (109 + 95 + 123) / 3;
+console.log('BONUS 1: koala average', koalaScoreAverage);
+dolphinScoreAverage = (97 + 112 + 101) / 3;
+console.log('BONUS 1: dolphin average', dolphinScoreAverage);
+
+if (
+  koalaScoreAverage > dolphinScoreAverage &&
+  koalaScoreAverage > minimumScore
+) {
+  console.log('BONUS 1: koalas have the better scoring average');
+} else if (
+  dolphinScoreAverage > koalaScoreAverage &&
+  dolphinScoreAverage > minimumScore
+) {
+  console.log('BONUS 1: dolphins have the better scoring average');
+} else if (koalaScoreAverage === dolphinScoreAverage) {
+  console.log('BONUS 1: This ends in a draw');
+}
+console.log('========== BONUS 1 IS COMPLETE==========');
+
+console.log('========== BONUS 2 ==========');
+koalaScoreAverage = (109 + 95 + 106) / 3;
+console.log('BONUS 2: koala average', koalaScoreAverage);
+dolphinScoreAverage = (97 + 112 + 101) / 3;
+console.log('BONUS 2: dolphin average', dolphinScoreAverage);
+
+if (
+  koalaScoreAverage > dolphinScoreAverage &&
+  koalaScoreAverage >= minimumScore
+) {
+  console.log('BONUS 2: koalas have the better scoring average');
+} else if (
+  dolphinScoreAverage > koalaScoreAverage &&
+  dolphinScoreAverage >= minimumScore
+) {
+  console.log('BONUS 2: dolphins have the better scoring average');
+} else if (koalaScoreAverage === dolphinScoreAverage) {
+  console.log('BONUS 2: This ends in a draw');
+}
+console.log('========== BONUS 2 is COMPLETE==========');
