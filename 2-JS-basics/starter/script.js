@@ -297,3 +297,15 @@ CODING CHALLENGE 2
 // } else {
 //   console.log('Height is undefined');
 // }
+
+/**
+ * EQUALiTY OPERATORS
+ * 
+ * const age = 18;
+// the person becomes an adult, only if the age is exactly 18
+if (age === 18) console.log('You just became an adult');
+ */
+
+/**
+ * BOOLEAN LOGIC
+ */
